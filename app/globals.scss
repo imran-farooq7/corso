@@ -1,3 +1,13 @@
+.header {
+	min-height: 1000px;
+	background: linear-gradient(
+			to bottom right,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.8)
+		),
+		url("../public/header-background.jpg") center center no-repeat;
+	background-size: cover;
+}
 $primary: #f8b547;
 $secondary: #35353a;
 $light: #fbf9f5;
@@ -40,4 +50,9 @@ $btn-padding-x-sm: $button-padding-x;
 $navbar-toggler-border-radius: 5px;
 
 $headings-font-weight: bold;
+@media (max-width: 768px) {
+	.navbar {
+		background: var(--bs-dark);
+	}
+}
 @import "bootstrap/scss/bootstrap.scss";

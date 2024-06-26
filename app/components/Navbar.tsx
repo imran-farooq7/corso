@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaCircle } from "react-icons/fa";
-import { FaFacebook, FaFacebookF, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+		<nav className="navbar navbar-expand-lg fixed-top navbar-dark">
 			<div className="container">
 				<Link href={"/"} className="navbar-brand">
 					<Image src={"/logo.png"} width={150} height={40} alt="logo" />

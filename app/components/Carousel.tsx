@@ -34,6 +34,7 @@ const Carousel = () => {
 						height={0}
 						sizes="100vw"
 						className="d-block w-100 h-100 rounded-5"
+						priority
 					/>
 				</div>
 				<div className="carousel-item">
@@ -44,6 +45,7 @@ const Carousel = () => {
 						height={0}
 						sizes="100vw"
 						className="d-block w-100 h-100 rounded-5"
+						priority
 					/>
 				</div>
 				<div className="carousel-item">
@@ -54,6 +56,7 @@ const Carousel = () => {
 						height={0}
 						sizes="100vw"
 						className="d-block w-100 h-100 rounded-5"
+						priority
 					/>
 				</div>
 			</div>

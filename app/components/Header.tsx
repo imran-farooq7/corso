@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Carousel from "./Carousel";
 
 const Header = () => {
 	return (
@@ -28,6 +29,11 @@ const Header = () => {
 								Discover
 							</Link>
 						</div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="col-12">
+						<Carousel />
 					</div>
 				</div>
 			</div>

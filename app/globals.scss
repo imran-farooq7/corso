@@ -1,5 +1,5 @@
 .header {
-	min-height: 1000px;
+	min-height: 1100px;
 	background: linear-gradient(
 			to bottom right,
 			rgba(0, 0, 0, 0.8),
@@ -50,6 +50,10 @@ $btn-padding-x-sm: $button-padding-x;
 $navbar-toggler-border-radius: 5px;
 
 $headings-font-weight: bold;
+.header .slide {
+	width: 90%;
+	margin: 0 auto;
+}
 @media (max-width: 768px) {
 	.navbar {
 		background: var(--bs-dark);

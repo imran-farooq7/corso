@@ -1,10 +1,30 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
+	const [colorChange, setColorchange] = useState(false);
+	const changeNavbarColor = () => {
+		if (window.scrollY >= 20) {
+			setColorchange(true);
+		} else {
+			setColorchange(false);
+		}
+	};
+	useEffect(() => {
+		window.addEventListener("scroll", changeNavbarColor);
+		return () => {
+			window.removeEventListener("scroll", changeNavbarColor);
+		};
+	}, [window.scrollY]);
 	return (
-		<nav className="navbar navbar-expand-lg fixed-top navbar-dark">
+		<nav
+			className={`navbar navbar-expand-lg fixed-top navbar-dark ${
+				colorChange && "bg-dark"
+			}`}
+		>
 			<div className="container">
 				<Link href={"/"} className="navbar-brand">
 					<Image src={"/logo.png"} width={150} height={40} alt="logo" />

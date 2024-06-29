@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Points from "./Points";
 
 const Discover = () => {
 	return (
@@ -35,6 +36,7 @@ const Discover = () => {
 					</div>
 				</div>
 			</div>
+			<Points />
 		</section>
 	);
 };

@@ -14,6 +14,9 @@ const Navbar = () => {
 		}
 	};
 	useEffect(() => {
+		if (window.scrollY >= 20) {
+			setColorchange(true);
+		}
 		window.addEventListener("scroll", changeNavbarColor);
 		return () => {
 			window.removeEventListener("scroll", changeNavbarColor);

@@ -1,6 +1,7 @@
 import Discover from "./components/Discover";
 import Header from "./components/Header";
 import Register from "./components/Register";
+import Summary from "./components/Summary";
 
 const Home = () => {
 	return (
@@ -8,6 +9,7 @@ const Home = () => {
 			<Header />
 			<Register />
 			<Discover />
+			<Summary />
 		</div>
 	);
 };

@@ -18,7 +18,7 @@ const Navbar = () => {
 		return () => {
 			window.removeEventListener("scroll", changeNavbarColor);
 		};
-	}, [window.scrollY]);
+	}, []);
 	return (
 		<nav
 			className={`navbar navbar-expand-lg fixed-top navbar-dark ${

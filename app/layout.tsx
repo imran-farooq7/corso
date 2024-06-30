@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.scss";
 import BootstrapClient from "./components/Bootstrap";
+import dynamic from "next/dynamic";
 import Navbar from "./components/Navbar";
+
+// const Navbar = dynamic(() => import("@/app/components/Navbar"), { ssr: false });
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "700"] });
 

@@ -33,12 +33,14 @@ const Summary = () => {
 					</div>
 				</div>
 			</div>
-			<Details
-				heading="Elevate Your Learning Journey with Expert Seminars"
-				description="Join our expert-led seminars and unlock new possibilities in your personal and professional development. Our seminars cover a diverse range of topics, from leadership and innovation to personal growth and productivity."
-				subDescription="Immerse yourself in engaging discussions, interactive workshops, and valuable networking opportunities."
-				img="/audience.jpg"
-			/>
+			<div className="container">
+				<Details
+					heading="Elevate Your Learning Journey with Expert Seminars"
+					description="Join our expert-led seminars and unlock new possibilities in your personal and professional development. Our seminars cover a diverse range of topics, from leadership and innovation to personal growth and productivity."
+					subDescription="Immerse yourself in engaging discussions, interactive workshops, and valuable networking opportunities."
+					img="/audience.jpg"
+				/>
+			</div>
 		</section>
 	);
 };

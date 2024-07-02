@@ -8,6 +8,15 @@
 		url("../public/header-background.jpg") center center no-repeat;
 	background-size: cover;
 }
+.invitation-bg {
+	background: linear-gradient(
+			to bottom right,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0.8)
+		),
+		url("../public/invitation-background.jpg") center center no-repeat;
+	background-size: cover;
+}
 $primary: #f8b547;
 $secondary: #35353a;
 $light: #fbf9f5;
